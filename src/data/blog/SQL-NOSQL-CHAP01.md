@@ -1,10 +1,10 @@
 ---
-title: Example Draft Post
+title: sql-no-sql
 author: Sat Naing
 pubDatetime: 2022-06-06T04:06:31Z
-slug: example-draft-post
+slug: sql-no-sql
 featured: false
-draft: true
+draft: false
 tags:
   - TypeScript
   - Astro

@@ -57,3 +57,4 @@ function sayHello(name) {
 
 const greeting = sayHello("SEONGJONG");
 console.log(greeting);
+```

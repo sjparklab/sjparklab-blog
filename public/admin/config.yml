@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: sjparklab/sjparklab-blog
+  branch: main 
+
+media_folder: "src/assets/images"
+public_folder: "src/assets/images"
+
+collections:
+  - name: "blog"
+    label: "Blog Post"
+    folder: "src/data/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Author", name: "author", widget: "string", default: "SEONGJONG PARK" }
+      - { label: "Publish Datetime", name: "pubDatetime", widget: "datetime" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "파일명과 동일 권장" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false, required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "OG Image", name: "ogImage", widget: "string", required: false, hint: "절대경로나 /images/uploads/… 권장" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
